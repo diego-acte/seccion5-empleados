@@ -125,8 +125,19 @@ public class GestionEmpleados {
 	 * </ul>
 	 */
 	public Empleado empleadoConMayorSalario() {
-		// TODO: completar
-		return null;
+	    if (cantidad == 0) {
+	        return null;
+	    }
+
+	    Empleado mayor = empleados[0];
+
+	    for (int i = 1; i < cantidad; i++) {
+	        if (empleados[i].calcularSalarioMensual() > mayor.calcularSalarioMensual()) {
+	            mayor = empleados[i];
+	        }
+	    }
+
+	    return mayor;
 	}
 
 	/**
