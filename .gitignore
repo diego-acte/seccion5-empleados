@@ -1,0 +1,16 @@
+# Archivos compilados de Java
+bin/
+*.class
+
+# Configuración de Eclipse
+.classpath
+.project
+.settings/
+
+# Archivos de macOS
+.DS_Store
+__MACOSX/
+._*
+
+# Logs
+*.log
