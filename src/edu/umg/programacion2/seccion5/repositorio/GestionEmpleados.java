@@ -92,8 +92,13 @@ public class GestionEmpleados {
 	 * </ul>
 	 */
 	public double calcularNominaTotal() {
-		// TODO: completar
-		return 0.0;
+	    double total = 0.0;
+
+	    for (int i = 0; i < cantidad; i++) {
+	        total += empleados[i].calcularSalarioMensual();
+	    }
+
+	    return total;
 	}
 
 	/**
